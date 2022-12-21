@@ -1,0 +1,15 @@
+p {
+    color:gold;
+    background-color: red;
+}
+pre {
+    color:brown;
+    background-color: aqua;
+}
+pre:hover {
+    transform: translateX(30px);
+    cursor: pointer;
+}
+body {
+    background-color: pink;
+}
