@@ -17,3 +17,7 @@ pre:hover {
 body {
     background-image: url("https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg");
 }
+h1 {
+    color: darkgreen;
+    background-color: crimson;
+}
