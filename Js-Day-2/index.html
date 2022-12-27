@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <h1>JsvaScript-Day-2</h1>
+    <p>1.What is creation phase and execution phase?</p>
+    <pre>Execution Phase:Compalir runs through the entire code for 2time before actually executing the code.
+        Execution Phase:
+        1,varuables and values assigned.
+        2,function executed.
+    </pre>
+    <p>2.What are objects in javascript?</p>
+    <pre>Ans:In javascript an object is a standalone entity with properties  and type.Ex:Booleans are objects.
+        numbers are objects in js .
+        strings are objects in js.
+        dates are objects in js 
+        maths are objects in jsfunctions are always objects in js .
+    </pre>
+    <p>3.What are function constructors?</p>
+    <pre>In a constructor function THIS does't have a value.it is a substitute for the new object.the value of this will become the new object when a new object is created
+        Ex:
+        function Person(first,last,age,eye){
+            this.firstName=name;
+            this.lastName=lastName;
+            this.age=age;
+            this.eye=eye;
+        }
+        const Myfather=new Person("surya","sai",50,"blue")
+    </pre>
+    <p>4.What are callbacks?</p>
+    <pre>A call function is a function passed as an argument to another function,this technique allows a function to callanother function,A callback function can run after another function has finished.
+        Ex:
+        function myfun1(){
+            myMessage("hello")
+        }
+        function myfun2(){
+            myMssage("Bye")
+        }
+        myfun1();
+        myfun2();
+    </pre>
+</body>
+</html>

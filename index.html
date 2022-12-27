@@ -30,10 +30,65 @@
     <pre>var & let & const are the javascript variables.var is introduced in the ES-5 and let & const are introduced are the ES-6 .Var is a global cope variable and the let and const are the functional scope variables. var can be redeclared and re initialized but let and const are redeclare but not reinitilized.</pre>
     <p>4.Ececution Context/</p>
     <pre>the execution context contains the code thats currently running and evering thats aids in its execution.</pre>
-    <p>5.</p>
-    <pre></pre>
-    <p>6.</p>
-    <pre></pre>
-    <p>7.</p>
+    <p>5.What is meant by first class functions?</p>
+    <pre>Ans: first class functions are the ,to assign function to a variable.
+        let myFunction=function(){
+            console.log("haii")
+        }
+        myFunction();
+
+    Ex;2
+    function a() return function b();
+    </pre>
+    <p>6.What are closures? Give an example of closure?</p>
+    <pre>Ans:A clouser is the combination of a function bundled together with reference to its surrounding stste.In other words a clouser gives you access to an outer functions scope from an inner function
+        Ex1:
+        function myFunction(){
+            let a=4;
+            return a*a
+        }
+        Ex2:
+        let a=5;
+        function myFunction(){
+            return a*a
+        }
+
+        EX3:
+        function add(){
+            let counter=0;
+            counter +=1;
+            return counter;
+        }
+        add();
+        add();
+        add();
+
+    </pre>
+    <p>7.Explain call(), apply() and, bind() methods. Give an example of call(), apply(), bind()?</p>
+    <pre>Ans:
+        Call=>Call is a function that helps you change the context of the invoking function
+        Apply=>Apply is very similar to the call function.
+        Bind=>Bind is a function that helps you create another function that you can execute later with the new context of this that is provided
+
+        Ex:1
+        const person={
+            firstName="surya",
+            lastName="pulicharla",
+            fullName=function(){
+                return this.firstName+" "this.lastName;
+            }
+        }
+    APPLY:Ex;1
+    const person1={
+        funnName=function(){
+            return this.firstName+' '+this.lastName;
+        }
+    }
+    const person={
+        firstName="surya",
+        lastName="pulicharla"
+    }
+    person.fullName.apply(person1)
+    </pre>
 </body>
 </html>

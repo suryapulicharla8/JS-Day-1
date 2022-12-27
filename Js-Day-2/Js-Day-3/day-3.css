@@ -1,0 +1,19 @@
+p {
+    color: black;
+    background-color: whitesmoke;
+}
+pre {
+    color: green;
+    background-color: red;
+}
+p:hover {
+    color: red;
+    background-color: black;
+}
+pre:hover {
+    color: gold;
+    background-color: black;
+}
+body {
+    background-image: url("https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg");
+}
